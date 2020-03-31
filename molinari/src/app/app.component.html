@@ -1,0 +1,21 @@
+{{title}}
+<!--Centriamo la mappa alle nostre coordinate-->
+<agm-map [latitude]="lat" [longitude]="lng">
+  <!--Mettiamo un marker alle nostre coordinate-->
+  <agm-marker [latitude]="lat" [longitude]="lng">
+  </agm-marker>
+
+  <agm-circle [latitude]="lat" [longitude]="lng"
+      [radius]="5000"
+      [fillColor]="'red'">
+  </agm-circle>
+
+  <agm-circle [latitude]="latCasaMia" [longitude]="lngCasaMia"
+      [radius]="5000"
+      [fillColor]="'green'">
+  </agm-circle>
+
+  <agm-marker [latitude]="latCasaMia" [longitude]="lngCasaMia">
+  </agm-marker>
+
+</agm-map>
